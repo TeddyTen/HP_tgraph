@@ -1,0 +1,77 @@
+---
+layout: default
+title: ホーム
+---
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-stars"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">RECRUITMENT × SPACE × TECHNOLOGY</p>
+    <h1 class="hero-title">多様な専門性で、<br><em>あなたの課題</em>に<br>向き合う。</h1>
+    <p class="hero-desc">人材紹介・衛星データ活用コンサルティング・ビジネスアプリ開発。<br>T-Graphは、三つの専門領域で事業をサポートします。</p>
+    <div class="hero-actions">
+      <a href="/contact/" class="btn-primary">お問い合わせ</a>
+      <a href="/#services" class="btn-secondary">サービスを見る</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>SCROLL</span><div class="scroll-line"></div></div>
+</section>
+
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="services-header reveal">
+      <span class="section-label">SERVICES</span>
+      <h2 class="section-title">三つの専門領域で<br>提供する<em>価値</em></h2>
+      <p>それぞれ独立した事業として、各領域の専門性を活かしたサポートを提供しています。</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal"><span class="service-num">01</span><span class="service-icon">👤</span><h3>人材紹介</h3><p>IT・営業・管理部門など幅広い職種を対象に、求職者一人ひとりの強みと可能性を深く理解した上で最適なキャリアへのマッチングをサポートします。学歴や転職回数に捉われない、本質的な評価を大切にしています。</p></div>
+      <div class="service-card reveal"><span class="service-num">02</span><span class="service-icon">🛰️</span><h3>衛星データ活用コンサル</h3><p>衛星データの利活用を通じた事業開発を支援します。新規事業の立案から実装まで、宇宙産業の専門知識と豊富なネットワークを活かして、クライアントの事業創出をサポートします。</p></div>
+      <div class="service-card reveal"><span class="service-num">03</span><span class="service-icon">📱</span><h3>ビジネスアプリ開発</h3><p>業務効率化・課題解決に特化したビジネス系アプリケーションを開発しています。現場の実務経験から生まれたアイデアをプロダクトとして形にし、近日リリース予定です。</p></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-inner">
+    <span class="section-label reveal">BLOG</span>
+    <h2 class="section-title reveal">最新<em>記事</em></h2>
+    <div class="blog-grid">
+      {% for post in site.posts limit:3 %}
+      <article class="blog-card reveal">
+        <div class="blog-card-date">{{ post.date | date: "%Y.%m.%d" }}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 80 }}</p>
+        <a href="{{ post.url }}" class="blog-card-link">続きを読む →</a>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="blog-more reveal"><a href="/blog/" class="btn-secondary">ブログ一覧を見る</a></div>
+  </div>
+</section>
+<section class="section app-section">
+  <div class="section-inner">
+    <div class="app-inner">
+      <div class="app-content reveal">
+        <span class="app-coming-soon">COMING SOON</span>
+        <span class="section-label">APP</span>
+        <h2 class="section-title">ビジネスを加速する<br><em>アプリ</em>を開発中</h2>
+        <p>現場の実務課題から着想したビジネス系アプリケーションを開発中です。業務の効率化・自動化を実現するプロダクトとして、近日リリース予定です。</p>
+        <a href="/app/" class="btn-secondary">詳細を見る</a>
+      </div>
+      <div class="app-visual reveal">
+        <div class="app-mockup"><div class="app-mockup-inner"><span class="app-mockup-icon">📱</span><div class="app-mockup-text">COMING SOON</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta-section">
+  <div style="position:relative">
+    <span class="section-label" style="display:block;text-align:center;margin-bottom:1rem">CONTACT</span>
+    <h2 class="section-title reveal">まずは、<em>話しましょう。</em></h2>
+    <p class="reveal">転職相談・衛星データ活用・採用支援など、お気軽にご相談ください。</p>
+    <div class="cta-actions reveal">
+      <a href="/contact/" class="btn-primary">お問い合わせ</a>
+      <a href="/about/" class="btn-secondary">会社概要を見る</a>
+    </div>
+  </div>
+</section>
