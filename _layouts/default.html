@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Sans+JP:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 <body>
   <header class="site-header">
@@ -48,6 +48,6 @@
       <p class="footer-copy">&copy; 2024 T-Graph Inc. All rights reserved.</p>
     </div>
   </footer>
-  <script src="/assets/js/main.js"></script>
+  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 </body>
 </html>
