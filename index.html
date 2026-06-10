@@ -3,38 +3,77 @@ layout: default
 title: ホーム
 ---
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-stars"></div>
+  <div class="hero-weave" aria-hidden="true">
+    <svg viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="#1c3553" stroke-width="1" opacity="0.18">
+        <path d="M40 0 V800 M110 0 V800 M180 0 V800 M250 0 V800 M320 0 V800 M390 0 V800 M460 0 V800 M530 0 V800"/>
+        <path d="M0 120 H600 M0 230 H600 M0 340 H600 M0 450 H600 M0 560 H600 M0 670 H600"/>
+      </g>
+      <g stroke="#2d5f8f" stroke-width="1.4" opacity="0.45">
+        <path d="M0 395 C 150 395, 200 230, 320 230 S 520 340, 600 340"/>
+      </g>
+    </svg>
+  </div>
   <div class="hero-inner">
-    <p class="hero-eyebrow">RECRUITMENT × CONSULTING × TECHNOLOGY</p>
-    <h1 class="hero-title">多様な専門性で、<br><em>あなたの課題</em>に<br>向き合う。</h1>
-    <p class="hero-desc">人材紹介・衛星データ活用コンサルティング・ビジネスアプリ開発。<br>Tsumugiは、三つの専門領域で事業をサポートします。</p>
+    <p class="hero-eyebrow">BUSINESS DEVELOPMENT CONSULTING</p>
+    <h1 class="hero-title">事業と人を、<em>紡ぐ</em>。</h1>
+    <p class="hero-desc">株式会社Tsumugiは、新規事業開発コンサルティングを軸に、人材紹介・人材コンサルティング、アプリケーション開発を展開しています。宇宙・衛星データ領域をはじめとする専門性と実務経験で、構想から実装までを支援します。</p>
     <div class="hero-actions">
       <a href="/contact/" class="btn-primary">お問い合わせ</a>
-      <a href="/#services" class="btn-secondary">サービスを見る</a>
+      <a href="/#services" class="btn-secondary">事業内容を見る</a>
     </div>
   </div>
-  <div class="hero-scroll"><span>SCROLL</span><div class="scroll-line"></div></div>
 </section>
 
 <section class="section" id="services">
   <div class="section-inner">
     <div class="services-header reveal">
       <span class="section-label">SERVICES</span>
-      <h2 class="section-title">三つの専門領域で<br>提供する<em>価値</em></h2>
-      <p>それぞれ独立した事業として、各領域の専門性を活かしたサポートを提供しています。</p>
+      <h2 class="section-title">事業内容</h2>
+      <p>新規事業開発コンサルティングを主軸として、人材領域・プロダクト開発の各事業を展開しています。</p>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal"><span class="service-num">01</span><span class="service-icon">👤</span><h3>人材紹介</h3><p>IT・営業・管理部門など幅広い職種を対象に、求職者一人ひとりの強みと可能性を深く理解した上で最適なキャリアへのマッチングをサポートします。学歴や転職回数に捉われない、本質的な評価を大切にしています。</p></div>
-      <div class="service-card reveal"><span class="service-num">02</span><span class="service-icon">🛰️</span><h3>衛星データ活用コンサル</h3><p>衛星データの利活用を通じた事業開発を支援します。新規事業の立案から実装まで、宇宙産業の専門知識と豊富なネットワークを活かして、クライアントの事業創出をサポートします。</p></div>
-      <div class="service-card reveal"><span class="service-num">03</span><span class="service-icon">📱</span><h3>ビジネスアプリ開発</h3><p>業務効率化・課題解決に特化したビジネス系アプリケーションを開発しています。現場の実務経験から生まれたアイデアをプロダクトとして形にし、近日リリース予定です。</p></div>
+      <div class="service-card primary reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c4.5 4.8 7 10.8 7 17s-2.5 12.2-7 17c-4.5-4.8-7-10.8-7-17s2.5-12.2 7-17z"/><circle cx="37" cy="11" r="3.5" fill="#fafaf7"/></svg>
+        </div>
+        <div>
+          <span class="service-tag">主要事業</span>
+          <h3>新規事業開発コンサルティング</h3>
+          <p>衛星データ・宇宙産業をはじめとする先端領域での新規事業立ち上げを支援します。市場調査・事業企画から、提案活動、パートナー開拓、プロジェクトマネジメントまで。技術と事業の橋渡しを実務レベルで担い、構想を収益事業へと育てます。</p>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="6"/><path d="M5 40c0-6.6 5.4-12 12-12s12 5.4 12 12"/><circle cx="33" cy="19" r="4.5"/><path d="M31 28.5c5.5 0 11 4 12 9.5"/></svg>
+        </div>
+        <h3>人材紹介・人材コンサルティング</h3>
+        <p>企業の採用活動支援と、候補者一人ひとりのキャリア支援を行います。学歴や転職回数に捉われず本質的な力を見極めるマッチングに加え、採用戦略の設計や専門人材のソーシングなど、人と組織の課題に幅広く対応します。</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="6" width="20" height="36" rx="3.5"/><path d="M21 37h6"/><path d="M24 16v8M20 20c0-4 8-4 8 0s-8 4-8 0" opacity="0"/><path d="M19 22c1.5-2 3-3 5-3s3.5 1 5 3M21 26c1-1.2 2-1.8 3-1.8s2 .6 3 1.8"/></svg>
+        </div>
+        <h3>アプリケーション開発</h3>
+        <p>業務効率化に特化した自社プロダクトを開発しています。コンサルティングの現場で得た実務課題をもとに、ビジネスパーソンの生産性を高めるアプリケーションを企画・設計から開発まで一貫して手がけています。</p>
+      </div>
     </div>
   </div>
 </section>
+
+<section class="facts-band">
+  <dl class="facts-grid">
+    <div class="fact reveal"><dt>会社設立</dt><dd>2025年1月</dd></div>
+    <div class="fact reveal"><dt>事業領域</dt><dd>3領域</dd></div>
+    <div class="fact reveal"><dt>主要分野</dt><dd>宇宙・衛星データ</dd></div>
+    <div class="fact reveal"><dt>所在地</dt><dd>鹿児島市</dd></div>
+  </dl>
+</section>
+
 <section class="section">
   <div class="section-inner">
     <span class="section-label reveal">BLOG</span>
-    <h2 class="section-title reveal">最新<em>記事</em></h2>
+    <h2 class="section-title reveal">最新記事</h2>
     <div class="blog-grid">
       {% for post in site.posts limit:3 %}
       <article class="blog-card reveal">
@@ -48,27 +87,12 @@ title: ホーム
     <div class="blog-more reveal"><a href="/blog/" class="btn-secondary">ブログ一覧を見る</a></div>
   </div>
 </section>
-<section class="section app-section">
-  <div class="section-inner">
-    <div class="app-inner">
-      <div class="app-content reveal">
-        <span class="app-coming-soon">COMING SOON</span>
-        <span class="section-label">APP</span>
-        <h2 class="section-title">ビジネスを加速する<br><em>アプリ</em>を開発中</h2>
-        <p>現場の実務課題から着想したビジネス系アプリケーションを開発中です。業務の効率化・自動化を実現するプロダクトとして、近日リリース予定です。</p>
-        <a href="/app/" class="btn-secondary">詳細を見る</a>
-      </div>
-      <div class="app-visual reveal">
-        <div class="app-mockup"><div class="app-mockup-inner"><span class="app-mockup-icon">📱</span><div class="app-mockup-text">COMING SOON</div></div></div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <section class="cta-section">
   <div style="position:relative">
     <span class="section-label" style="display:block;text-align:center;margin-bottom:1rem">CONTACT</span>
-    <h2 class="section-title reveal">まずは、<em>話しましょう。</em></h2>
-    <p class="reveal">転職相談・衛星データ活用・採用支援など、お気軽にご相談ください。</p>
+    <h2 class="section-title reveal">まずは、お気軽に<em>ご相談</em>ください。</h2>
+    <p class="reveal">新規事業のご相談、採用・キャリア支援、プロダクトに関するお問い合わせなど、お気軽にご連絡ください。</p>
     <div class="cta-actions reveal">
       <a href="/contact/" class="btn-primary">お問い合わせ</a>
       <a href="/about/" class="btn-secondary">会社概要を見る</a>
